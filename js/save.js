@@ -11,7 +11,7 @@ if(localStorage.getItem("points") !== null){
 else{
     var points = new ExpantaNum(0);  
     var gainps = new ExpantaNum(1);
-    var up_buyed = [false]; 
+    var up_buyed = [false,false]; 
 }
 function save(){
     localStorage.setItem("points",points.toString());

@@ -1,15 +1,10 @@
-@font-face {
-    font-family: "wryh_bold";
-    src: url("微软雅黑粗体.ttf");
-}
 *{
-    background-color: #333333;
     font-size: 1.5cm;
-    font-family: wryh_bold;
+}
+body{
+    background-color: #333333;
 }
 button{
-    background-color: aliceblue;
-    border-color: aliceblue;
     padding: 1cm 1.5cm;
     border-radius: 1cm;
     
@@ -23,15 +18,19 @@ button:hover{
     border-color: red;
 }
 .up_buyed{
-    background-color: grey;
-    border-color: grey;
+    background-color: green;
+    border-color: green;
+}
+.up_buyed:hover{
+    background-color: green;
+    border-color: green;
 }
 #main{
     text-align: center;
 }
 .text{
     color: aliceblue;
-    font-size: 3cm;
+    font-size: 1.5cm;
 }
 .layers{
     padding: 1.5cm 2cm;
@@ -51,4 +50,18 @@ button:hover{
 }
 .rainbow_text{
     animation: rainbow_text 10s infinite;  
+}
+#news{
+    color: black;
+}
+.softcap{
+	color: #1b1f3f;
+	font-weight: bold;
+	text-shadow: 0px 3px 0px #16182a;
+}
+.conter{
+    width: 100%;
+    height: 70px;
+    background-color: aliceblue;
+    border: grey;
 }
