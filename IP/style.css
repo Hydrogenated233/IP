@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "wryh_bold";
+    src: url("微软雅黑粗体.ttf");
+}
+*{
+    background-color: #333333;
+    font-size: 1.5cm;
+    font-family: wryh_bold;
+}
+button{
+    background-color: aliceblue;
+    border-color: aliceblue;
+    padding: 1cm 1.5cm;
+    border-radius: 1cm;
+    
+}
+button:hover{
+    background-color: grey;
+    border-color: grey;
+}
+#hard_reset{
+    background-color: aliceblue;
+    border-color: red;
+}
+.up_buyed{
+    background-color: grey;
+    border-color: grey;
+}
+#main{
+    text-align: center;
+}
+.text{
+    color: aliceblue;
+    font-size: 3cm;
+}
+.layers{
+    padding: 1.5cm 2cm;
+}
+@keyframes rainbow_text {
+    0%{color: red;}
+    9%{color:orange;}
+    19%{color: yellow;}
+    27%{color: green;}
+    37%{color: blue;}
+    46%{color: purple;}
+    55%{color: blue;}
+    64%{color: green;}
+    73%{color: yellow;}
+    82%{color:orange;}
+    100%{color: red;}
+}
+.rainbow_text{
+    animation: rainbow_text 10s infinite;  
+}
