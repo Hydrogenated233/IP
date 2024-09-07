@@ -1,6 +1,12 @@
 const up_effect=[
-    [10, 50],
-    ["gainps.mul(2)","gainps.mul(2).pow(1.7).floor()"]
+    [
+        10,
+        50
+    ],
+    [
+        "gainps=gainps.mul(2)",
+        "gainps=gainps.mul(2).pow(1.7).floor()"
+    ]
 ];
 function switch_to(where) {  
     document.getElementById(now_place).style.display = 'none';  
@@ -10,7 +16,7 @@ function switch_to(where) {
 function up(x){
     if(points.gte(ExpantaNum(up_effect[0][x-1]))&& !up_buyed[x-1]){
         points=points.sub(up_effect[0][x-1]);
-        gainps=eval(up_effect[1][x-1])
+        eval(up_effect[1][x-1])
         up_buyed[x-1]=true;
     }
 }
